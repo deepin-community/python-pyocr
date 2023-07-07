@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+cp -r tests $AUTOPKGTEST_TMP
+cd $AUTOPKGTEST_TMP
+python3 -m pytest --cov=pyocr --cov-report=term-missing --cov-fail-under=97 --cov-branch tests/*.py

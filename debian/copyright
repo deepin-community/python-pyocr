@@ -1,22 +1,61 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: PyOCR
+Upstream-Contact: https://forum.openpaper.work/
+Source: https://gitlab.gnome.org/World/OpenPaperwork/pyocr
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: 2011-2021, Jerome Flesch <jflesch@openpaper.work>
+           2018-2019, Elliott Sales de Andrade <quantum.analyst@gmail.com>
+           2019, Jérémy Buchou <jeremy.buchou@gmail.com>
+           2018-2019, Marián Skrip <marian.skripp@gmail.com>
+           2018, Thomas Perret <thomas.perret@gresille.org>
+           2017-2018, David Martin <david_martin@fastmail.com>
+           2018, Zoran Pavlovic <zoran.pavlovic.eng@gmail.com>
+           2018, Daniel Quinn <code@danielquinn.org>
+           2017, Adriano Pagano <adriano@sqooba.io>
+           2017, Marian Skrip <marian.skrip@devinsolutions.com>
+           2017, Ashish Kulkarni <ashish@advarisk.com>
+           2017, aszlig <aszlig@redmoonstudios.org>
+           2016, Benjamin Nguyen-Van-Yen <queue@Keats.dehors.org>
+           2016, Teis <TeisD@users.noreply.github.com>
+           2016, Fjup <Kuba-S@seznam.cz>
+           2016, Chanwoong Kim <devk0817@gmail.com>
+           2016, Tom <tom@zeitgold.com>
+           2016, Bernhard Liebl <Bernhard.Liebl@gmx.org>
+           2016, Jakub Semerák <Kalt@users.noreply.github.com>
+           2016, Yada <ydt.hran2@gmail.com>
+           2015, Paulo Miguel Almeida <paulo.ubuntu@gmail.com>
+           2015, Bernard Cafarelli <bernard.cafarelli@gmail.com>
+           2014, Ross Vandegrift <ross@kallisti.us>
+           2014, Jon Debonis <jon@trov.com>
+           2014, Gian Luca Dalla Torre <gianluca@gestionaleauto.com>
+           2014, Pedro-Juan Ferrer <vehrka@gmail.com>
+           2010, Jbochi <jbochi@gmail.com>
+           2009, Samuel Hoffstaetter <samuel@hoffstaetter.com>
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2019-2022, Thomas Perret <thomas.perret@phyx.fr>
+           2014, Paul Liétar <paul@lietar.net>
+           2014, Ross Vandegrift <ross@kallisti.us>
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later
+ version.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ On Debian systems, the full text of the GNU General Public
+ License version 3 can be found in the file
+ /usr/share/common-licenses/GPL-3.
