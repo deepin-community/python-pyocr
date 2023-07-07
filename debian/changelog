@@ -1,5 +1,190 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-pyocr (0.8.3-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 0.8.3
+  * debian/watch: drop filenamemangling
+  * debian/control: bump Standards-Version
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Thomas Perret <thomas.perret@phyx.fr>  Sun, 18 Sep 2022 18:03:48 +0200
+
+python-pyocr (0.8.2-1) unstable; urgency=medium
+
+  * New upstream version 0.8.2
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Sun, 17 Apr 2022 18:43:31 +0200
+
+python-pyocr (0.8.1-1) unstable; urgency=medium
+
+  * New upstream version 0.8.1
+  * debian/control:
+    + remove setuptools-scm from Build-Depends
+    + dumps Standards-Version to 4.6.0.1 (no changes needed)
+  * debian/rules: disable setuptools-scm mechanism
+  * debian/copyright: update copyright years
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Wed, 22 Dec 2021 17:48:05 +0100
+
+python-pyocr (0.8-1) unstable; urgency=medium
+
+  * New upstream version 0.8
+  * debian/control: Bump Standards-Version (no changes needed)
+  * debian/rules: remove dh_missing override (default for dh-compat>=13)
+  * debian/source: remove useless options
+  * debian/tests: reduce fail thresholds
+  * debian/copyright: Update Upstream-Contact
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Wed, 06 Jan 2021 12:42:04 +0100
+
+python-pyocr (0.7.2-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Thomas Perret ]
+  * debian/control: Bump debhelper compat version
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Wed, 12 Aug 2020 00:22:50 +0200
+
+python-pyocr (0.7.2-2) unstable; urgency=medium
+
+  * Add debian/salsa-ci.yml
+  * debian/copyright: update list of authors
+  * debian/rules: add dh_missing --fail-missing
+  * debian/source: use options instead of clean
+  * debian/control: bump Standards-Version to 4.4.1
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Tue, 03 Dec 2019 00:09:06 +0100
+
+python-pyocr (0.7.2-1) unstable; urgency=medium
+
+  * New maintainer by ITS (Closes: #916776)
+  * New upstream version 0.7.2 (Closes: #886306, Closes: #926353)
+  * debian/copyright:
+    + fix url and GPL-3+ text and update contributors list
+    + Move deprecated upstream metadata to copyright
+  * debian/patches: Drop patch applied upstream
+  * debian/control:
+    + Update Standards-Version to 4.4.0 (no changes required)
+    + Use debhelper-compat instead of debhelper as Build-Depends
+    + Remove debian/compat
+    + drop python2 package (Closes: #938082)
+    + Add Rules-Requires-Root: no
+  * debian/rules: Enable test suite
+  * debian/tests: Add unittests as DEP-8 autopkgtest
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Sun, 22 Sep 2019 16:25:46 +0200
+
+python-pyocr (0.5.3-1) UNRELEASED; urgency=medium
+
+  * New maintainer by ITS (Closes: #916776)
+  * New upstream version 0.5.3 (Closes: #886306)
+  * debian:
+    - watch: update upstream source url
+    - compat: dump compat to 12
+    - control:
+      + update upstream URLs
+      + drop python2 package
+      + dump Standards-Version to 4.3.0
+      + add Testsuite
+    - add gbp.conf file
+    - rules: Update build for 0.5.3 release
+    - patches:
+      + drop patch applied upstream
+      + add patch for tesseract 4.0.0 support
+    - add upstream metadata
+
+ -- Thomas Perret <thomas.perret@phyx.fr>  Thu, 03 Jan 2019 16:57:45 +0100
+
+python-pyocr (0.3.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian: Fix capitalization of project name
+
+ -- Paul Liétar <paul@lietar.net>  Tue, 13 Jan 2015 17:21:44 +0000
+
+python-pyocr (0.2.4-2) unstable; urgency=medium
+
+  * debian/rules: do not run tests if DEB_BUILD_OPTIONS contains nocheck
+  * debian/copyright: Update tesseract.py path.
+  * debian/control: bump Standards-Version to 3.9.6
+
+ -- Paul Liétar <paul@lietar.net>  Sat, 29 Nov 2014 21:54:45 +0000
+
+python-pyocr (0.2.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/patches: remove patches which have been upstreamed
+
+ -- Paul Liétar <paul@lietar.net>  Wed, 13 Aug 2014 12:10:37 +0000
+
+python-pyocr (0.2.3-5) unstable; urgency=medium
+
+  [ Paul Liétar ]
+  * debian: change package maintainer.
+
+ -- Paul Liétar <paul@lietar.net>  Tue, 12 Aug 2014 17:12:02 +0000
+
+python-pyocr (0.2.3-4) unstable; urgency=medium
+
+  * debian/control: fix depends on python-pil
+
+ -- Ross Vandegrift <ross@kallisti.us>  Sun, 06 Apr 2014 19:40:29 -0400
+
+python-pyocr (0.2.3-3) unstable; urgency=medium
+
+  * debian/control: update Build-Deps for tests
+
+ -- Ross Vandegrift <ross@kallisti.us>  Wed, 02 Apr 2014 18:43:08 -0400
+
+python-pyocr (0.2.3-2) unstable; urgency=medium
+
+  * debian/control: remove extra whitespace
+  * debian/copyright: meet copyright format 1.0
+  * debian/rules: fix tests on build
+  * debian/patches:
+    * 0001-Disable-tests-incompatible-with-Tesseract-3.3.0.patch;
+      disable incompatible tests
+    * 0002-Fix-missing-comma-from-export-list.patch;
+      fix typo in an export list
+
+ -- Ross Vandegrift <ross@kallisti.us>  Sun, 23 Mar 2014 22:51:56 +0000
+
+python-pyocr (0.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+  [ Jerome Flesch ]
+  * Always strip the Alpha channel before trying to write the temporary images
+  * Fix: Take into account that new versions of Tesseract uses the file
+    extension .hocr instead of .html
+  * Fix: Make hocr parsing more resistant: there maybe extra data around the
+    box positions
+
+  [ Ross Vandegrift ]
+  * debian/patches:
+    * 0001-Fix-Take-into-account-that-new-versions-of-Tesseract.patch:
+      remove; released upstream.
+    * 0002-Fix-Make-hocr-parsing-more-resistant-there-maybe-ext.patch:
+      remove; released upstream.
+
+ -- Ross Vandegrift <ross@kallisti.us>  Thu, 20 Mar 2014 21:18:53 +0000
+
+python-pyocr (0.2.2-3) unstable; urgency=medium
+
+  * Debian release 0.2.2-3
+  * Cherry-pick 07bb23 to fix Jessie hocr parsing.
+
+ -- Ross Vandegrift <ross@kallisti.us>  Thu, 20 Mar 2014 12:28:50 +0000
+
+python-pyocr (0.2.2-2) unstable; urgency=medium
+
+  * Debian release 0.2.2-1
+  * Cherry-pick 27d490 to fix Jessie tesseract.
+
+ -- Ross Vandegrift <ross@kallisti.us>  Wed, 19 Mar 2014 22:42:41 +0000
+
+python-pyocr (0.2.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #741877)
+
+ -- Ross Vandegrift <ross@kallisti.us>  Sun, 16 Mar 2014 17:04:15 +0000
